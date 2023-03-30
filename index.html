@@ -8,23 +8,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="modal" id="modal">
-    <div class="container">
-      <button class="reset-btn" id="resetBtn" >Reset</button>
+  <div class="header">
+    <h1>Tic Tac Toe</h1>
+  </div>
+
+  <div class="main">
+    <div class="playerX   current-player">
+      <p class="player-text">X's Turn</p>
     </div>
     
+    <div class="playerO">
+      <p class="player-text">O's Turn</p>
+    </div>
+
+    <div class="board" id="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
   </div>
   
-  <div class="board" id="board">
-    <div class="cell" data-index="0"></div>
-    <div class="cell" data-index="1"></div>
-    <div class="cell" data-index="2"></div>
-    <div class="cell" data-index="3"></div>
-    <div class="cell" data-index="4"></div>
-    <div class="cell" data-index="5"></div>
-    <div class="cell" data-index="6"></div>
-    <div class="cell" data-index="7"></div>
-    <div class="cell" data-index="8"></div>
+  <div class="modal" id="modal">
+    <div class="container">
+      <p class="modal-text" id="modalText">Player "X" Wins</p>
+      <button class="reset-btn" id="resetBtn" >Play again</button>
+    </div> 
   </div>
 <script src="script.js"></script>
 </body>
